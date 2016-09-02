@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            app:subtitleTextAppearance="@style/Card.Subtitle"
+            app:theme="@style/ToolbarCard"
+            app:titleTextAppearance="@style/Card.Title"
+            android:layout_alignParentRight="true"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgAvatar"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/white"
+                android:src="@mipmap/ic_launcher"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:textSize="20dp"
+                android:id="@+id/txtNamePost"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgAvatar"
+                android:layout_toEndOf="@+id/imgAvatar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15min"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="3dp"
+                android:layout_below="@+id/imageVIew"
+                android:id="@+id/txtDate"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium"
+                android:id="@+id/txtName"
+                android:layout_below="@+id/txtNamePost"
+                android:layout_alignLeft="@+id/txtNamePost"
+                android:layout_alignStart="@+id/txtNamePost" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/txtDescription"
+                android:layout_below="@id/imgAvatar"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescription"
+                android:id="@+id/txtPrice"
+                android:text="Precio"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="viewEnd"
+                android:layout_margin="16dp"
+                />
+            <ImageView
+                android:layout_below="@+id/txtPrice"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:id="@+id/imageVIew"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

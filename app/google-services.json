@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "562395911218",
+    "firebase_url": "https://ferreteria-android.firebaseio.com",
+    "project_id": "ferreteria-android",
+    "storage_bucket": "ferreteria-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562395911218:android:0b6951cd7edca903",
+        "android_client_info": {
+          "package_name": "org.gelbercabrera.ferreteria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562395911218-5cl09vbk1g218qicii3vja9a076k9kpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8satyX4_ZRq6f0RHf_zIJc5UrCs_UYHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
